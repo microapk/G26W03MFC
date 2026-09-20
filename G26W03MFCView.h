@@ -36,12 +36,16 @@ public:
 #endif
 
 protected:
+	int m_currentRadius = 30; // 기본 원 반지름 크기
 
 // 생성된 메시지 맵 함수
 protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
+	afx_msg void OnRButtonDown(UINT nFlags, CPoint point); // 추가
+	afx_msg void OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags); // 추가
+
 };
 
 #ifndef _DEBUG  // G26W03MFCView.cpp의 디버그 버전
