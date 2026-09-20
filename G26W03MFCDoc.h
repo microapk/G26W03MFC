@@ -36,7 +36,10 @@ public:
 #endif
 
 protected:
-
+	CPoint Point = CPoint(-100, -100);
+public:
+	CPoint GetPoint() { return Point; }
+	void SetPoint(CPoint p) { Point = p; }
 // 생성된 메시지 맵 함수
 protected:
 	DECLARE_MESSAGE_MAP()
